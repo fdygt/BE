@@ -1,0 +1,1735 @@
+2025-06-03 11:51:14,423 UTC - __main__ - INFO - [User: fdygg]
+Message: 
+        Starting application:
+        Time: 2025-06-03 04:51:14 UTC
+        User: fdygg
+        Python Version: 3.12.10 (main, Apr  9 2025, 18:13:11) [Clang 18.0.3 (https://android.googlesource.com/toolchain/llvm-project d8003a456
+        
+Path: /storage/emulated/0/test/main.py
+Function: main
+Line: 369
+Details: None
+
+2025-06-03 11:51:14,424 UTC - __main__ - DEBUG - [User: fdygg]
+Message: Loading configuration file...
+Path: /storage/emulated/0/test/main.py
+Function: load
+Line: 82
+Details: None
+
+2025-06-03 11:51:14,427 UTC - __main__ - INFO - [User: fdygg]
+Message: Configuration loaded successfully
+Path: /storage/emulated/0/test/main.py
+Function: load
+Line: 99
+Details: None
+
+2025-06-03 11:51:14,428 UTC - __main__ - DEBUG - [User: fdygg]
+Message: Setting up database...
+Path: /storage/emulated/0/test/main.py
+Function: main
+Line: 380
+Details: None
+
+2025-06-03 11:51:14,495 UTC - database - INFO - [User: fdygg]
+Message: 
+        Database setup completed successfully
+        Time: 2025-05-28 17:07:17
+        User: fdygg
+        
+Path: /storage/emulated/0/test/database.py
+Function: setup_database
+Line: 324
+Details: None
+
+2025-06-03 11:51:14,496 UTC - __main__ - DEBUG - [User: fdygg]
+Message: Creating bot instance...
+Path: /storage/emulated/0/test/main.py
+Function: main
+Line: 384
+Details: None
+
+2025-06-03 11:51:14,501 UTC - discord.client - WARNING - [User: fdygg]
+Message: PyNaCl is not installed, voice will NOT be supported
+Path: /data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py
+Function: __init__
+Line: 318
+Details: None
+
+2025-06-03 11:51:14,503 UTC - __main__ - DEBUG - [User: fdygg]
+Message: 
+        Bot initialized with:
+        Admin ID: 1035189920488235120
+        Guild ID: 1318806349118963722
+        Live Stock Channel: 1318806350310146114
+        Purchase Log Channel: 1318806351228698683
+        Donation Log Channel: 1318806351228698680
+        History Buy Channel: 1318806351228698682
+        Startup Time: 2025-06-03 04:51:14.503623+00:00
+        
+Path: /storage/emulated/0/test/main.py
+Function: __init__
+Line: 142
+Details: None
+
+2025-06-03 11:51:14,504 UTC - __main__ - DEBUG - [User: fdygg]
+Message: Setting up API server...
+Path: /storage/emulated/0/test/main.py
+Function: main
+Line: 388
+Details: None
+
+2025-06-03 11:51:14,504 UTC - api.server - DEBUG - [User: fdygg]
+Message: 
+        Creating API server:
+        Time: 2025-06-03 04:51:14 UTC
+        Bot Type: MyBot
+        User: fdygt
+        
+Path: /storage/emulated/0/test/api/server.py
+Function: create_api_server
+Line: 459
+Details: None
+
+2025-06-03 11:51:14,508 UTC - api.server - INFO - [User: fdygg]
+Message: 
+        Memulai pemuatan modul:
+        Time: 2025-06-03 04:51:14 UTC
+        Path: /storage/emulated/0/test/api
+        User: fdygt
+        
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 66
+Details: None
+
+2025-06-03 11:51:14,509 UTC - api.server - INFO - [User: fdygg]
+Message: Memuat modul dari folder: routes
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 87
+Details: None
+
+2025-06-03 11:51:14,522 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.routes.admin
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,537 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                                Terdaftar router untuk:
+                                Module: api.routes.admin
+                                Prefix: /api/v1/routes/admin
+                                Time: 2025-06-03 04:51:14 UTC
+                                User: fdygt
+                                
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 112
+Details: None
+
+2025-06-03 11:51:14,581 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.routes.audit
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,596 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                                Terdaftar router untuk:
+                                Module: api.routes.audit
+                                Prefix: /api/v1/routes/audit
+                                Time: 2025-06-03 04:51:14 UTC
+                                User: fdygt
+                                
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 112
+Details: None
+
+2025-06-03 11:51:14,597 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.routes.auth
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,612 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                                Terdaftar router untuk:
+                                Module: api.routes.auth
+                                Prefix: /api/v1/routes/auth
+                                Time: 2025-06-03 04:51:14 UTC
+                                User: fdygt
+                                
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 112
+Details: None
+
+2025-06-03 11:51:14,613 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.routes.balance
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,634 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                                Terdaftar router untuk:
+                                Module: api.routes.balance
+                                Prefix: /api/v1/routes/balance
+                                Time: 2025-06-03 04:51:14 UTC
+                                User: fdygt
+                                
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 112
+Details: None
+
+2025-06-03 11:51:14,635 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.routes.dashboard
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,646 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                                Terdaftar router untuk:
+                                Module: api.routes.dashboard
+                                Prefix: /api/v1/routes/dashboard
+                                Time: 2025-06-03 04:51:14 UTC
+                                User: fdygt
+                                
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 112
+Details: None
+
+2025-06-03 11:51:14,688 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.routes.notifications
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,706 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                                Terdaftar router untuk:
+                                Module: api.routes.notifications
+                                Prefix: /api/v1/routes/notifications
+                                Time: 2025-06-03 04:51:14 UTC
+                                User: fdygt
+                                
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 112
+Details: None
+
+2025-06-03 11:51:14,707 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.routes.product
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,734 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                                Terdaftar router untuk:
+                                Module: api.routes.product
+                                Prefix: /api/v1/routes/product
+                                Time: 2025-06-03 04:51:14 UTC
+                                User: fdygt
+                                
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 112
+Details: None
+
+2025-06-03 11:51:14,765 UTC - api.server - ERROR - [User: fdygg]
+Message: 
+                            Gagal memuat modul:
+                            Module: api.routes.reports
+                            Error: No module named 'api.models.reports'
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            Stack Trace:
+                            Traceback (most recent call last):
+  File "/storage/emulated/0/test/api/server.py", line 95, in load_all_modules
+    module = importlib.import_module(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/storage/emulated/0/test/api/routes/reports.py", line 6, in <module>
+    from ..models.reports import (
+ModuleNotFoundError: No module named 'api.models.reports'
+
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 121
+Details: None
+
+2025-06-03 11:51:14,785 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.routes.settings
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,794 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                                Terdaftar router untuk:
+                                Module: api.routes.settings
+                                Prefix: /api/v1/routes/settings
+                                Time: 2025-06-03 04:51:14 UTC
+                                User: fdygt
+                                
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 112
+Details: None
+
+2025-06-03 11:51:14,795 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.routes.stock
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,840 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                                Terdaftar router untuk:
+                                Module: api.routes.stock
+                                Prefix: /api/v1/routes/stock
+                                Time: 2025-06-03 04:51:14 UTC
+                                User: fdygt
+                                
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 112
+Details: None
+
+2025-06-03 11:51:14,840 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.routes.transactions
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,877 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                                Terdaftar router untuk:
+                                Module: api.routes.transactions
+                                Prefix: /api/v1/routes/transactions
+                                Time: 2025-06-03 04:51:14 UTC
+                                User: fdygt
+                                
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 112
+Details: None
+
+2025-06-03 11:51:14,878 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.routes.user
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,904 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                                Terdaftar router untuk:
+                                Module: api.routes.user
+                                Prefix: /api/v1/routes/user
+                                Time: 2025-06-03 04:51:14 UTC
+                                User: fdygt
+                                
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 112
+Details: None
+
+2025-06-03 11:51:14,905 UTC - api.server - INFO - [User: fdygg]
+Message: Memuat modul dari folder: service
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 87
+Details: None
+
+2025-06-03 11:51:14,940 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.admin_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,940 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.audit_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,941 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.auth_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,941 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.balance_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,941 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.blacklist_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,942 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.compression_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,942 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.conversion_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,942 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.database_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,942 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.error_handling_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,943 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.logs_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,943 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.metrics_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,943 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.notification_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,943 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.product_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,944 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.rate_limit_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,944 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.settings_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,944 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.stock_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,944 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.transaction_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,945 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.user_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,945 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.service.validation_service
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,945 UTC - api.server - INFO - [User: fdygg]
+Message: Memuat modul dari folder: models
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 87
+Details: None
+
+2025-06-03 11:51:14,956 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.admin
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,956 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.audit
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,956 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.auth
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,957 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.balance
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,957 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.blacklist
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,969 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.common
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,970 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.conversion
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,970 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.dashboard
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,971 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.error
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,971 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.logs
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,971 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.notifications
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,972 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.product
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,972 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.rate_limit
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,972 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.settings
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,972 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.stock
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,973 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.transaction
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,973 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.user
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,973 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.models.validation
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,974 UTC - api.server - INFO - [User: fdygg]
+Message: Memuat modul dari folder: middleware
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 87
+Details: None
+
+2025-06-03 11:51:14,999 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.middleware.auth
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:14,999 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.middleware.caching
+                            Time: 2025-06-03 04:51:14 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,000 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.middleware.compression
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,000 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.middleware.error_handling
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,000 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.middleware.logging
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,001 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.middleware.metrics
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,001 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.middleware.rate_limiting
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,001 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.middleware.security
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,001 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.middleware.validation
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,002 UTC - api.server - INFO - [User: fdygg]
+Message: Memuat modul dari folder: dependencies
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 87
+Details: None
+
+2025-06-03 11:51:15,012 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.dependencies.audit
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,013 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.dependencies.auth
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,013 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.dependencies.cache
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,013 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.dependencies.database
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,014 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.dependencies.logger
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,014 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.dependencies.rate_limiter
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,014 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.dependencies.redis
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,014 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.dependencies.validation
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,015 UTC - api.server - INFO - [User: fdygg]
+Message: Memuat modul dari folder: config
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 87
+Details: None
+
+2025-06-03 11:51:15,022 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.config.audit
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,023 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.config.cache
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,023 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.config.database
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,024 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.config.logging
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,024 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.config.notification
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,024 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.config.permissions
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,024 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.config.rate_limit
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,025 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.config.redis
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,025 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.config.security
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,025 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.config.settings
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,026 UTC - api.server - INFO - [User: fdygg]
+Message: 
+                            Berhasil memuat modul:
+                            Module: api.config.validation
+                            Time: 2025-06-03 04:51:15 UTC
+                            User: fdygt
+                            
+Path: /storage/emulated/0/test/api/server.py
+Function: load_all_modules
+Line: 97
+Details: None
+
+2025-06-03 11:51:15,026 UTC - api.server - DEBUG - [User: fdygg]
+Message: Setting up API routes and middleware
+Path: /storage/emulated/0/test/api/server.py
+Function: setup_api
+Line: 179
+Details: None
+
+2025-06-03 11:51:15,026 UTC - api.dependencies.logger - DEBUG - [User: fdygg]
+Message: 
+        Setting bot instance:
+        Bot: MyBot
+        Time: 2025-06-03 04:51:15 UTC
+    
+Path: /storage/emulated/0/test/api/dependencies/__init__.py
+Function: set_bot
+Line: 21
+Details: None
+
+2025-06-03 11:51:15,233 UTC - api.middleware - INFO - [User: fdygg]
+Message: 
+    
+        Middleware setup complete:
+        1. Metrics Middleware
+        2. Logging Middleware
+        3. Security Middleware
+        4. Validation Middleware
+        5. Compression Middleware
+        6. Error Handling Middleware
+        7. Rate Limiting Middleware
+        8. Cache Middleware
+        9. Auth Middleware
+        
+    Timestamp: 2025-06-03 01:44:57
+    User: fdygt
+    
+Path: /storage/emulated/0/test/api/middleware/__init__.py
+Function: setup_middleware
+Line: 161
+Details: None
+
+2025-06-03 11:51:15,236 UTC - api.server - INFO - [User: fdygg]
+Message: 
+            API routes and middleware setup completed:
+            Time: 2025-06-03 04:51:15 UTC
+            Total Routes: 113
+            Auth Enabled: True
+            CORS Enabled: True
+            Version: v1
+            User: fdygt
+            
+Path: /storage/emulated/0/test/api/server.py
+Function: setup_api
+Line: 366
+Details: None
+
+2025-06-03 11:51:15,274 UTC - api.server - DEBUG - [User: fdygg]
+Message: 
+        API Server initialized:
+        Time: 2025-06-03 04:51:15 UTC
+        Bot: MyBot
+        FastAPI App: FastAPI
+        Version: v1
+        Python: 3.12.10
+        OS: Linux-5.4.254-android12-9-g86b20c4f85e6-ab939-aarch64-with-libc
+        Loaded Modules: ['api.routes.admin', 'api.routes.audit', 'api.routes.auth', 'api.routes.balance', 'api.routes.dashboard', 'api.routes.notifications', 'api.routes.product', 'api.routes.settings', 'api.routes.stock', 'api.routes.transactions', 'api.routes.user', 'api.service.admin_service', 'api.service.audit_service', 'api.service.auth_service', 'api.service.balance_service', 'api.service.blacklist_service', 'api.service.compression_service', 'api.service.conversion_service', 'api.service.database_service', 'api.service.error_handling_service', 'api.service.logs_service', 'api.service.metrics_service', 'api.service.notification_service', 'api.service.product_service', 'api.service.rate_limit_service', 'api.service.settings_service', 'api.service.stock_service', 'api.service.transaction_service', 'api.service.user_service', 'api.service.validation_service', 'api.models.admin', 'api.models.audit', 'api.models.auth', 'api.models.balance', 'api.models.blacklist', 'api.models.common', 'api.models.conversion', 'api.models.dashboard', 'api.models.error', 'api.models.logs', 'api.models.notifications', 'api.models.product', 'api.models.rate_limit', 'api.models.settings', 'api.models.stock', 'api.models.transaction', 'api.models.user', 'api.models.validation', 'api.middleware.auth', 'api.middleware.caching', 'api.middleware.compression', 'api.middleware.error_handling', 'api.middleware.logging', 'api.middleware.metrics', 'api.middleware.rate_limiting', 'api.middleware.security', 'api.middleware.validation', 'api.dependencies.audit', 'api.dependencies.auth', 'api.dependencies.cache', 'api.dependencies.database', 'api.dependencies.logger', 'api.dependencies.rate_limiter', 'api.dependencies.redis', 'api.dependencies.validation', 'api.config.audit', 'api.config.cache', 'api.config.database', 'api.config.logging', 'api.config.notification', 'api.config.permissions', 'api.config.rate_limit', 'api.config.redis', 'api.config.security', 'api.config.settings', 'api.config.validation']
+        User: fdygt
+        
+Path: /storage/emulated/0/test/api/server.py
+Function: __init__
+Line: 50
+Details: None
+
+2025-06-03 11:51:15,276 UTC - api.server - INFO - [User: fdygg]
+Message: 
+        API server thread started:
+        Time: 2025-06-03 04:51:15 UTC
+        Thread ID: 468521860352
+        Thread Name: APIServerThread
+        Status: Running
+        Version: v1
+        User: fdygt
+        
+Path: /storage/emulated/0/test/api/server.py
+Function: create_api_server
+Line: 476
+Details: None
+
+2025-06-03 11:51:15,278 UTC - api.server - INFO - [User: fdygg]
+Message: 
+            Starting API server:
+            Time: 2025-06-03 04:51:15 UTC
+            Host: 0.0.0.0
+            Port: 8080
+            Debug: True
+            Version: v1
+            User: fdygt
+            
+Path: /storage/emulated/0/test/api/server.py
+Function: run
+Line: 433
+Details: None
+
+2025-06-03 11:51:15,279 UTC - __main__ - INFO - [User: fdygg]
+Message: Starting bot...
+Path: /storage/emulated/0/test/main.py
+Function: main
+Line: 392
+Details: None
+
+2025-06-03 11:51:15,280 UTC - asyncio - DEBUG - [User: fdygg]
+Message: Using selector: EpollSelector
+Path: /data/data/com.termux/files/usr/lib/python3.12/asyncio/selector_events.py
+Function: __init__
+Line: 64
+Details: None
+
+2025-06-03 11:51:15,281 UTC - discord.client - INFO - [User: fdygg]
+Message: logging in using static token
+Path: /data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py
+Function: login
+Line: 643
+Details: None
+
+2025-06-03 11:51:15,286 UTC - asyncio - DEBUG - [User: fdygg]
+Message: Using selector: EpollSelector
+Path: /data/data/com.termux/files/usr/lib/python3.12/asyncio/selector_events.py
+Function: __init__
+Line: 64
+Details: None
+
+2025-06-03 11:51:15,369 UTC - uvicorn.error - INFO - [User: fdygg]
+Message: Started server process [16855]
+Path: /data/data/com.termux/files/usr/lib/python3.12/site-packages/uvicorn/server.py
+Function: _serve
+Line: 83
+Details: None
+
+2025-06-03 11:51:15,370 UTC - uvicorn.error - INFO - [User: fdygg]
+Message: Waiting for application startup.
+Path: /data/data/com.termux/files/usr/lib/python3.12/site-packages/uvicorn/lifespan/on.py
+Function: startup
+Line: 48
+Details: None
+
+2025-06-03 11:51:15,371 UTC - uvicorn.error - INFO - [User: fdygg]
+Message: ASGI 'lifespan' protocol appears unsupported.
+Path: /data/data/com.termux/files/usr/lib/python3.12/site-packages/uvicorn/lifespan/on.py
+Function: main
+Line: 94
+Details: None
+
+2025-06-03 11:51:15,371 UTC - uvicorn.error - INFO - [User: fdygg]
+Message: Application startup complete.
+Path: /data/data/com.termux/files/usr/lib/python3.12/site-packages/uvicorn/lifespan/on.py
+Function: startup
+Line: 62
+Details: None
+
+2025-06-03 11:51:15,372 UTC - uvicorn.error - INFO - [User: fdygg]
+Message: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+Path: /data/data/com.termux/files/usr/lib/python3.12/site-packages/uvicorn/server.py
+Function: _log_started_message
+Line: 215
+Details: None
+
+2025-06-03 11:51:16,446 UTC - __main__ - DEBUG - [User: fdygg]
+Message: Setting up bot components...
+Path: /storage/emulated/0/test/main.py
+Function: setup_hook
+Line: 156
+Details: None
+
+2025-06-03 11:51:16,449 UTC - __main__ - DEBUG - [User: fdygg]
+Message: Command handler initialized
+Path: /storage/emulated/0/test/main.py
+Function: setup_hook
+Line: 162
+Details: None
+
+2025-06-03 11:51:16,449 UTC - __main__ - DEBUG - [User: fdygg]
+Message: aiohttp session created
+Path: /storage/emulated/0/test/main.py
+Function: setup_hook
+Line: 166
+Details: None
+
+2025-06-03 11:51:16,487 UTC - __main__ - ERROR - [User: fdygg]
+Message: 
+                    Failed to load extension:
+                    Extension: cogs.admin
+                    Error: Extension 'cogs.admin' raised an error: ImportError: cannot import name 'API_SECRET_KEY' from 'api.config' (/storage/emulated/0/test/api/config/__init__.py)
+                    Time: 2025-06-03 04:51:16 UTC
+                    Stack Trace:
+                    Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 951, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/storage/emulated/0/test/cogs/admin.py", line 15, in <module>
+    from api.config import API_SECRET_KEY
+ImportError: cannot import name 'API_SECRET_KEY' from 'api.config' (/storage/emulated/0/test/api/config/__init__.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/test/main.py", line 180, in setup_hook
+    await self.load_extension(ext)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1029, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 954, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.admin' raised an error: ImportError: cannot import name 'API_SECRET_KEY' from 'api.config' (/storage/emulated/0/test/api/config/__init__.py)
+
+                    
+Path: /storage/emulated/0/test/main.py
+Function: setup_hook
+Line: 183
+Details: None
+
+2025-06-03 11:51:16,534 UTC - LiveStock - INFO - [User: fdygg]
+Message: LiveStock cog loaded and task started
+Path: /storage/emulated/0/test/ext/live_stock.py
+Function: cog_load
+Line: 32
+Details: None
+
+2025-06-03 11:51:16,534 UTC - root - INFO - [User: fdygg]
+Message: LiveStock cog loaded successfully
+Path: /storage/emulated/0/test/ext/live_stock.py
+Function: setup
+Line: 105
+Details: None
+
+2025-06-03 11:51:16,535 UTC - __main__ - INFO - [User: fdygg]
+Message: ✅ Loaded extension: ext.live_stock
+Path: /storage/emulated/0/test/main.py
+Function: setup_hook
+Line: 181
+Details: None
+
+2025-06-03 11:51:16,539 UTC - root - INFO - [User: fdygg]
+Message: Transaction cog loaded successfully at 2025-06-03 04:51:16 UTC
+Path: /storage/emulated/0/test/ext/trx.py
+Function: setup
+Line: 342
+Details: None
+
+2025-06-03 11:51:16,540 UTC - __main__ - INFO - [User: fdygg]
+Message: ✅ Loaded extension: ext.trx
+Path: /storage/emulated/0/test/main.py
+Function: setup_hook
+Line: 181
+Details: None
+
+2025-06-03 11:51:16,547 UTC - __main__ - INFO - [User: fdygg]
+Message: ✅ Loaded extension: ext.donate
+Path: /storage/emulated/0/test/main.py
+Function: setup_hook
+Line: 181
+Details: None
+
+2025-06-03 11:51:16,552 UTC - BalanceManagerCog - INFO - [User: fdygg]
+Message: BalanceManagerCog loading...
+Path: /storage/emulated/0/test/ext/balance_manager.py
+Function: cog_load
+Line: 451
+Details: None
+
+2025-06-03 11:51:16,553 UTC - root - INFO - [User: fdygg]
+Message: BalanceManager cog loaded successfully at 2025-06-03 04:51:16 UTC
+Path: /storage/emulated/0/test/ext/balance_manager.py
+Function: setup
+Line: 464
+Details: None
+
+2025-06-03 11:51:16,553 UTC - __main__ - INFO - [User: fdygg]
+Message: ✅ Loaded extension: ext.balance_manager
+Path: /storage/emulated/0/test/main.py
+Function: setup_hook
+Line: 181
+Details: None
+
+2025-06-03 11:51:16,559 UTC - ProductManagerCog - INFO - [User: fdygg]
+Message: ProductManagerCog loading...
+Path: /storage/emulated/0/test/ext/product_manager.py
+Function: cog_load
+Line: 555
+Details: None
+
+2025-06-03 11:51:16,560 UTC - root - INFO - [User: fdygg]
+Message: ProductManager cog loaded successfully at 2025-06-03 04:51:16 UTC
+Path: /storage/emulated/0/test/ext/product_manager.py
+Function: setup
+Line: 568
+Details: None
+
+2025-06-03 11:51:16,560 UTC - __main__ - INFO - [User: fdygg]
+Message: ✅ Loaded extension: ext.product_manager
+Path: /storage/emulated/0/test/main.py
+Function: setup_hook
+Line: 181
+Details: None
+
+2025-06-03 11:51:17,268 UTC - discord.gateway - INFO - [User: fdygg]
+Message: Shard ID None has connected to Gateway (Session ID: 646639335167b85bdce32fe56e25bb5c).
+Path: /data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/gateway.py
+Function: received_message
+Line: 562
+Details: None
+
+2025-06-03 11:51:19,302 UTC - __main__ - INFO - [User: fdygg]
+Message: Bot FDY is ready!
+Path: /storage/emulated/0/test/main.py
+Function: on_ready
+Line: 213
+Details: None
+
+2025-06-03 11:51:19,303 UTC - __main__ - INFO - [User: fdygg]
+Message: Bot ID: 1318180029091287071
+Path: /storage/emulated/0/test/main.py
+Function: on_ready
+Line: 214
+Details: None
+
+2025-06-03 11:51:19,303 UTC - __main__ - INFO - [User: fdygg]
+Message: Guild ID: 1318806349118963722
+Path: /storage/emulated/0/test/main.py
+Function: on_ready
+Line: 215
+Details: None
+
+2025-06-03 11:51:19,303 UTC - __main__ - INFO - [User: fdygg]
+Message: Admin ID: 1035189920488235120
+Path: /storage/emulated/0/test/main.py
+Function: on_ready
+Line: 216
+Details: None
+
+2025-06-03 11:51:19,303 UTC - __main__ - INFO - [User: fdygg]
+Message: ✅ Found Live Stock channel: 📜⌗・live-stock
+Path: /storage/emulated/0/test/main.py
+Function: on_ready
+Line: 236
+Details: None
+
+2025-06-03 11:51:19,303 UTC - __main__ - INFO - [User: fdygg]
+Message: ✅ Found Purchase Log channel: log-purch
+Path: /storage/emulated/0/test/main.py
+Function: on_ready
+Line: 236
+Details: None
+
+2025-06-03 11:51:19,304 UTC - __main__ - INFO - [User: fdygg]
+Message: ✅ Found Donation Log channel: deposit
+Path: /storage/emulated/0/test/main.py
+Function: on_ready
+Line: 236
+Details: None
+
+2025-06-03 11:51:19,304 UTC - __main__ - INFO - [User: fdygg]
+Message: ✅ Found History Buy channel: buy-logs
+Path: /storage/emulated/0/test/main.py
+Function: on_ready
+Line: 236
+Details: None
+
+2025-06-03 11:51:19,304 UTC - __main__ - INFO - [User: fdygg]
+Message: ✅ Found Music channel: 🔔⌗・music
+Path: /storage/emulated/0/test/main.py
+Function: on_ready
+Line: 236
+Details: None
+
+2025-06-03 11:51:19,304 UTC - __main__ - INFO - [User: fdygg]
+Message: ✅ Found Logs channel: 🔔⌗・logs
+Path: /storage/emulated/0/test/main.py
+Function: on_ready
+Line: 236
+Details: None
+
+2025-06-03 11:51:19,305 UTC - __main__ - DEBUG - [User: fdygg]
+Message: Bot status updated
+Path: /storage/emulated/0/test/main.py
+Function: on_ready
+Line: 248
+Details: None
+
+2025-06-03 11:51:19,305 UTC - TransactionCog - INFO - [User: fdygg]
+Message: TransactionCog is ready at 2025-06-03 04:51:19 UTC
+Path: /storage/emulated/0/test/ext/trx.py
+Function: on_ready
+Line: 335
+Details: None
+
+2025-06-03 11:51:19,306 UTC - BalanceManagerCog - INFO - [User: fdygg]
+Message: BalanceManagerCog is ready at 2025-06-03 04:51:19 UTC
+Path: /storage/emulated/0/test/ext/balance_manager.py
+Function: on_ready
+Line: 447
+Details: None
+
+2025-06-03 11:51:20,078 UTC - LiveStock - DEBUG - [User: fdygg]
+Message: Updated message 1379287325997137930
+Path: /storage/emulated/0/test/ext/live_stock.py
+Function: live_stock
+Line: 79
+Details: None
+
+2025-06-03 11:52:14,800 UTC - LiveStock - DEBUG - [User: fdygg]
+Message: Updated message 1379287325997137930
+Path: /storage/emulated/0/test/ext/live_stock.py
+Function: live_stock
+Line: 79
+Details: None
+
+2025-06-03 11:53:04,959 UTC - uvicorn.error - ERROR - [User: fdygg]
+Message: Exception in ASGI application
+
+Path: /data/data/com.termux/files/usr/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py
+Function: run_asgi
+Line: 408
+Details: (<class 'TypeError'>, TypeError('MetricsMiddleware.__init__() takes 1 positional argument but 2 were given'), <traceback object at 0x6d13ce46c0>)
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/starlette/applications.py", line 111, in __call__
+    self.middleware_stack = self.build_middleware_stack()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/starlette/applications.py", line 98, in build_middleware_stack
+    app = cls(app, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MetricsMiddleware.__init__() takes 1 positional argument but 2 were given
+2025-06-03 11:53:09,877 UTC - LiveStock - DEBUG - [User: fdygg]
+Message: Updated message 1379287325997137930
+Path: /storage/emulated/0/test/ext/live_stock.py
+Function: live_stock
+Line: 79
+Details: None
+
+2025-06-03 11:54:04,837 UTC - LiveStock - DEBUG - [User: fdygg]
+Message: Updated message 1379287325997137930
+Path: /storage/emulated/0/test/ext/live_stock.py
+Function: live_stock
+Line: 79
+Details: None
+
+2025-06-03 11:54:59,905 UTC - LiveStock - DEBUG - [User: fdygg]
+Message: Updated message 1379287325997137930
+Path: /storage/emulated/0/test/ext/live_stock.py
+Function: live_stock
+Line: 79
+Details: None
+
+2025-06-03 11:55:54,857 UTC - LiveStock - DEBUG - [User: fdygg]
+Message: Updated message 1379287325997137930
+Path: /storage/emulated/0/test/ext/live_stock.py
+Function: live_stock
+Line: 79
+Details: None
+
+2025-06-03 11:56:50,026 UTC - LiveStock - DEBUG - [User: fdygg]
+Message: Updated message 1379287325997137930
+Path: /storage/emulated/0/test/ext/live_stock.py
+Function: live_stock
+Line: 79
+Details: None
+
+2025-06-03 11:57:44,864 UTC - LiveStock - DEBUG - [User: fdygg]
+Message: Updated message 1379287325997137930
+Path: /storage/emulated/0/test/ext/live_stock.py
+Function: live_stock
+Line: 79
+Details: None
+
+2025-06-03 11:58:39,938 UTC - LiveStock - DEBUG - [User: fdygg]
+Message: Updated message 1379287325997137930
+Path: /storage/emulated/0/test/ext/live_stock.py
+Function: live_stock
+Line: 79
+Details: None
+
+2025-06-03 11:59:34,831 UTC - LiveStock - DEBUG - [User: fdygg]
+Message: Updated message 1379287325997137930
+Path: /storage/emulated/0/test/ext/live_stock.py
+Function: live_stock
+Line: 79
+Details: None
+
+2025-06-03 12:00:29,787 UTC - LiveStock - DEBUG - [User: fdygg]
+Message: Updated message 1379287325997137930
+Path: /storage/emulated/0/test/ext/live_stock.py
+Function: live_stock
+Line: 79
+Details: None
+
