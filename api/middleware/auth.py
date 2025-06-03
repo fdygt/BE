@@ -7,6 +7,7 @@ import jwt
 from urllib.parse import urlparse
 import re
 from functools import wraps
+from starlette.middleware.base import BaseHTTPMiddleware
 
 from ..service.auth_service import AuthService
 from ..service.user_service import UserService
@@ -29,7 +30,6 @@ def skip_auth() -> Callable:
         return func
     return decorator
 
-
 def get_token_from_header(request: Request) -> Optional[str]:
     """Extract token from Authorization header (Bearer)"""
     auth_header = request.headers.get("Authorization")
@@ -37,13 +37,15 @@ def get_token_from_header(request: Request) -> Optional[str]:
         return auth_header.split(" ")[1]
     return None
 
+
 async def auth_middleware(request: Request, call_next):
     """FastAPI middleware function for authentication"""
-    auth = AuthMiddleware()
-    return await auth(request, call_next)
+    auth = AuthMiddleware(request.app)
+    return await auth.dispatch(request, call_next)
 
-class AuthMiddleware:
-    def __init__(self):
+class AuthMiddleware(BaseHTTPMiddleware):
+    def __init__(self, app):
+        super().__init__(app)
         self.auth_service = AuthService()
         self.user_service = UserService()
         self.startup_time = datetime.now(UTC)
@@ -93,12 +95,12 @@ class AuthMiddleware:
         self.failed_attempts = {}
         
         logger.info(f"""
-        AuthMiddleware initialized:
-        Time: 2025-06-02 06:01:30
-        User: fdygt
+Current Date and Time (UTC - YYYY-MM-DD HH:MM:SS formatted): {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S')}
+Current User's Login: fdygt
+AuthMiddleware initialized
         """)
 
-    def _is_public_endpoint(self, path: str) -> bool:
+    def _is_public_endpoint(self, request: Request) -> bool:
         """Check if endpoint is public"""
         # Check decorator first
         route = request.scope.get("route")
@@ -107,7 +109,7 @@ class AuthMiddleware:
             
         # Then check PUBLIC_ENDPOINTS
         return any(
-            re.match(pattern, path)
+            re.match(pattern, request.url.path)
             for pattern in self.PUBLIC_ENDPOINTS
         )
 
@@ -148,7 +150,11 @@ class AuthMiddleware:
             return True, token_data, None
             
         except Exception as e:
-            logger.error(f"Token validation error: {str(e)}")
+            logger.error(f"""
+Current Date and Time (UTC - YYYY-MM-DD HH:MM:SS formatted): {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S')}
+Current User's Login: fdygt
+Token validation error: {str(e)}
+            """)
             return False, None, "Token validation failed"
 
     async def _check_user_permissions(
@@ -178,7 +184,11 @@ class AuthMiddleware:
             return False, "Insufficient permissions"
             
         except Exception as e:
-            logger.error(f"Permission check error: {str(e)}")
+            logger.error(f"""
+Current Date and Time (UTC - YYYY-MM-DD HH:MM:SS formatted): {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S')}
+Current User's Login: fdygt
+Permission check error: {str(e)}
+            """)
             return False, "Permission check failed"
 
     async def _handle_failed_attempt(
@@ -222,15 +232,11 @@ class AuthMiddleware:
         if user_id in self.failed_attempts:
             del self.failed_attempts[user_id]
 
-    async def __call__(
-        self,
-        request: Request,
-        call_next
-    ):
+    async def dispatch(self, request: Request, call_next):
         path = request.url.path
         
         # Skip auth for public endpoints
-        if self._is_public_endpoint(path):
+        if self._is_public_endpoint(request):
             return await call_next(request)
             
         try:
@@ -290,11 +296,11 @@ class AuthMiddleware:
             
         except Exception as e:
             logger.error(f"""
-            Auth middleware error:
-            Error: {str(e)}
-            Time: 2025-06-02 06:01:30
-            User: fdygt
-            Path: {path}
+Current Date and Time (UTC - YYYY-MM-DD HH:MM:SS formatted): {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S')}
+Current User's Login: fdygt
+Auth middleware error:
+Error: {str(e)}
+Path: {path}
             """)
             return JSONResponse(
                 status_code=500,
