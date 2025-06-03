@@ -3,24 +3,26 @@ from fastapi.responses import JSONResponse, StreamingResponse
 import logging
 from typing import Optional, Dict, Union
 from datetime import datetime, UTC
+from starlette.middleware.base import BaseHTTPMiddleware
 
 from ..service.compression_service import CompressionService
 from ..service.settings_service import SettingsService
 
 logger = logging.getLogger(__name__)
 
-class CompressionMiddleware:
-    def __init__(self):
+class CompressionMiddleware(BaseHTTPMiddleware):
+    def __init__(self, app):
+        super().__init__(app)
         self.compression_service = CompressionService()
         self.settings_service = SettingsService()
         self.startup_time = datetime.now(UTC)
         logger.info(f"""
-        CompressionMiddleware initialized:
-        Time: 2025-05-30 14:53:16
-        User: fdygg
+Current Date and Time (UTC - YYYY-MM-DD HH:MM:SS formatted): {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S')}
+Current User's Login: fdygt
+CompressionMiddleware initialized
         """)
 
-    async def __call__(self, request: Request, call_next):
+    async def dispatch(self, request: Request, call_next):
         try:
             # Get compression settings
             settings = await self.settings_service.get_compression_settings()
@@ -32,6 +34,10 @@ class CompressionMiddleware:
 
             # Skip compression for streaming responses
             if isinstance(response, StreamingResponse):
+                return response
+
+            # Check if compression should be skipped
+            if await self._should_skip_compression(request, response):
                 return response
 
             # Get response content
@@ -93,11 +99,11 @@ class CompressionMiddleware:
 
         except Exception as e:
             logger.error(f"""
-            Compression middleware error:
-            Error: {str(e)}
-            Time: 2025-05-30 14:53:16
-            User: fdygg
-            Path: {request.url.path}
+Current Date and Time (UTC - YYYY-MM-DD HH:MM:SS formatted): {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S')}
+Current User's Login: fdygt
+Compression middleware error:
+Error: {str(e)}
+Path: {request.url.path}
             """)
             return await call_next(request)
 
