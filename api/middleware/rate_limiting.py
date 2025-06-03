@@ -1,41 +1,48 @@
 from datetime import datetime, UTC
 import logging
-from typing import Optional
+from typing import Optional, Tuple, Dict, Any
 from fastapi import Request, Response, HTTPException
+from starlette.middleware.base import BaseHTTPMiddleware
 from ..service.rate_limit_service import RateLimitService
 from ..service.auth_service import AuthService
 from ..models.rate_limit import RateLimit
 
 logger = logging.getLogger(__name__)
 
-class RateLimitMiddleware:
-    def __init__(self):
-        self.rate_limit_service = RateLimitService()
-        self.auth_service = AuthService()
-        self.startup_time = datetime.now(UTC)
-        logger.info(f"""
-        RateLimitMiddleware initialized:
-        Time: 2025-05-30 14:43:34
-        User: fdygg
-        """)
-async def check_rate_limit(user_id: str, endpoint: str, ip_address: str):
+# Initialize services at module level for exported functions
+_rate_limit_service = RateLimitService()
+
+async def check_rate_limit(user_id: str, endpoint: str, ip_address: str) -> Tuple[bool, Dict]:
     """
     Check if the request is within rate limit.
-    Return (allowed: bool, limit_info: dict)
+    Returns (allowed: bool, limit_info: dict)
     """
-    return await rate_limit_service.check_rate_limit(user_id, endpoint, ip_address)
+    return await _rate_limit_service.check_rate_limit(user_id, endpoint, ip_address)
 
 async def update_rate_limit(user_id: str, endpoint: str, ip_address: str):
     """
     Log the request to update the rate limiting data store.
     """
-    return await rate_limit_service.log_request(user_id, endpoint, ip_address)
+    return await _rate_limit_service.log_request(user_id, endpoint, ip_address)
 
 def get_rate_limit_key(user_id: str, endpoint: str, ip_address: str) -> str:
     """
     Generate a unique key for rate limiting purposes.
     """
     return f"{user_id}:{endpoint}:{ip_address}"
+
+class RateLimitMiddleware(BaseHTTPMiddleware):
+    def __init__(self, app):
+        super().__init__(app)
+        self.rate_limit_service = RateLimitService()
+        self.auth_service = AuthService()
+        self.startup_time = datetime.now(UTC)
+        logger.info("""
+Current Date and Time (UTC - YYYY-MM-DD HH:MM:SS formatted): 2025-06-03 12:44:44
+Current User's Login: fdygt
+RateLimitMiddleware initialized
+        """)
+
     async def get_user_id(self, request: Request) -> Optional[str]:
         """Extract user ID from request"""
         try:
@@ -54,10 +61,14 @@ def get_rate_limit_key(user_id: str, endpoint: str, ip_address: str) -> str:
             return token_data.username
 
         except Exception as e:
-            logger.error(f"Error extracting user ID: {str(e)}")
+            logger.error("""
+Current Date and Time (UTC - YYYY-MM-DD HH:MM:SS formatted): 2025-06-03 12:44:44
+Current User's Login: fdygt
+Error extracting user ID: {str(e)}
+            """)
             return None
 
-    async def __call__(self, request: Request, call_next):
+    async def dispatch(self, request: Request, call_next):
         try:
             # Get user ID and IP
             user_id = await self.get_user_id(request) or "anonymous"
@@ -106,7 +117,11 @@ def get_rate_limit_key(user_id: str, endpoint: str, ip_address: str) -> str:
             # Re-raise HTTP exceptions (including our rate limit exception)
             raise he
         except Exception as e:
-            logger.error(f"Rate limit middleware error: {str(e)}")
+            logger.error("""
+Current Date and Time (UTC - YYYY-MM-DD HH:MM:SS formatted): 2025-06-03 12:44:44
+Current User's Login: fdygt
+Rate limit middleware error: {str(e)}
+            """)
             raise HTTPException(
                 status_code=500,
                 detail="Internal server error in rate limiting"
